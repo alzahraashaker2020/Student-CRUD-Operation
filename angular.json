@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "demoo"
+  "defaultProject": "demoo",
+  "cli": {
+    "analytics": false
+  }
 }
