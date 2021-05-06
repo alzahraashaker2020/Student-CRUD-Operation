@@ -1,0 +1,58 @@
+<!-- <p>student-add works!</p>
+
+<div class="form-group">
+    <label for="id" class="col-sm-3-control-label">Id</label>
+    <div class="col-sm-4">
+        <input [(ngModel)]="nstudent._id" class="form-control" id="id">
+
+    </div>
+    <label for="Name" class="col-sm-3-control-label">Name</label>
+    <div class="col-sm-4">
+        <input [(ngModel)]="nstudent.Name" class="form-control" id="Name">
+
+    </div>
+    <label for="email" class="col-sm-3-control-label">Email</label>
+    <div class="col-sm-4">
+        <input [(ngModel)]="nstudent.Email" class="form-control" id="email">
+
+    </div>
+</div>
+<div class="form-group">
+    <button (click)="save()" class="btn btn-primary">Save</button>
+</div> -->
+
+<div class="form-horizontal bg-success"
+    style="margin-left:2%;margin-top:2%;margin-bottom: 2%;border-radius:15px; width: 50%;">
+
+    <legend>Add Form </legend>
+    <div class="form-group form-inline">
+        <label for="ID" class="col-sm-2 control-lable">ID :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="nstudent._id" class="form-control" id="ID" placeholder="ID" />
+        </div>
+    </div>
+    <div class="form-group form-inline">
+        <label for="Name" class="col-sm-2 control-lable">Name :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="nstudent.Name" class="form-control" id="Name" placeholder="Name" />
+        </div>
+    </div>
+    <div class="form-group form-inline">
+        <label for="Email" class="col-sm-2 control-lable">Email :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="nstudent.Email" class="form-control" id="Email" placeholder="Email" />
+        </div>
+    </div>
+    <div class="form-group form-inline">
+        <label for="Department" class="col-sm-2 control-lable">Department :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="nstudent.Department" class="form-control" id="Department" placeholder="Department" />
+        </div>
+    </div>
+    <div class="form-group offset-2">
+        <button (click)="save()" class="btn btn-primary" style="margin-top:1%;margin-bottom: 1%;">Add</button>
+    </div>
+
+
+</div>
+<router-outlet></router-outlet>

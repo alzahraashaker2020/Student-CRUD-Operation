@@ -1,0 +1,30 @@
+<button class="btn btn-success" [routerLink]="['/students/add']">Add New Student</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th colspan="2">Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of students">
+            <td>{{item._id}}</td>
+            <td>{{item.Name}}</td>
+            <td>{{item.Email}}</td>
+            <td>{{item.Department}}</td>
+            <td>
+                <a [routerLink]="['/students/details/',item._id]" class="btn btn-success">Details</a>
+            </td>
+            <td>
+
+                <a [routerLink]="['/students/edit/',item._id]" class="btn btn-success">edit</a>
+
+                <!-- <a [routerLink]="['/students/edit/',item._id]" class="btn btn-primary">Edit</a></td> -->
+
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>

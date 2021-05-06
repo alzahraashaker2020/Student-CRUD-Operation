@@ -1,0 +1,7 @@
+<p>course-edit works!</p>
+<div>
+    Student ID is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;{{course._id}}<br /><br />
+    Student Name is : &nbsp;<input [(ngModel)]="course.Name"><br /><br />
+    <button class="btn btn-primary" (click)="edit()">Save</button>
+</div>
+<router-outlet></router-outlet>

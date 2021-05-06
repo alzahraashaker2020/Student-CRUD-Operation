@@ -1,0 +1,26 @@
+<p>add-department works!</p>
+<p>work please</p>
+
+<div class="form-horizontal bg-success"
+    style="margin-left:2%;margin-top:2%;margin-bottom: 2%;border-radius:15px; width: 50%;">
+    <legend>Add Form </legend>
+    <div class="form-group form-inline">
+        <label for="ID" class="col-sm-2 control-lable">ID :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="ndepartment._id" class="form-control" id="ID" placeholder="ID" />
+        </div>
+    </div>
+    <div class="form-group form-inline">
+        <label for="Name" class="col-sm-2 control-lable">Name :</label>
+        <div class="col-sm-6">
+            <input [(ngModel)]="ndepartment.Name" class="form-control" id="Name" placeholder="Name" />
+        </div>
+    </div>
+
+    <div class="form-group offset-2">
+        <button (click)="save()" class="btn btn-primary" style="margin-top:1%;margin-bottom: 1%;">Add</button>
+    </div>
+
+
+</div>
+<router-outlet></router-outlet>

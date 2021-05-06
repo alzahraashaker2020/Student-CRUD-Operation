@@ -1,0 +1,9 @@
+<p>edit-department works!</p>
+<p>edit-student works!</p>
+<div>
+    Student ID is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;{{department._id}}<br /><br />
+    Student Name is : &nbsp;<input [(ngModel)]="department.Name"><br /><br />
+    <button class="btn btn-primary" (click)="edit()">Save</button>
+</div>
+<router-outlet></router-outlet>
+
